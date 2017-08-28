@@ -42,3 +42,13 @@ SELECT a.Title, s.Title FROM Album a LEFT JOIN Song s ON s.AlbumId = a.AlbumId;
 -- from song s
 -- JOIN artist a ON s.artistId = a.artistId
 -- WHERE a.artistname = "Jay Z"
+
+-- SELECT s.title, al.Title, ar.artistname
+-- FROM artist ar, album al, LEFT JOIN song s ON al.albumId = s.albumId
+-- WHERE ar.artistname = "Beetles"
+-- AND al.artistID = ar.ArtistId
+
+--adding a song without 
+insert into song
+(songid, artistid, title)
+values (34, 6, 'hey bull dog')
